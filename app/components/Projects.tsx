@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowRight, Github, Search, X, ExternalLink } from "lucide-react";
+import { Github, Search, X } from "lucide-react";
 import Section from "./Section";
 import { projects, techIcons } from "../data";
 import { useState } from "react";
