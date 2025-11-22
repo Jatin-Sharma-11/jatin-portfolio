@@ -1,6 +1,4 @@
 import { getPostData, getAllPostIds } from "../../../lib/mdx";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import ClientGiscus from "./ClientGiscus";
 
@@ -14,7 +12,6 @@ export default async function Post({ params }: { params: { slug: string } }) {
 
     return (
         <main className="min-h-screen bg-slate-950 text-slate-200 selection:bg-blue-500/30">
-            <Header />
             <article className="container mx-auto px-6 pt-32 pb-20 max-w-3xl">
                 <header className="mb-12 text-center">
                     <time className="text-slate-400 mb-4 block">{postData.date}</time>
@@ -29,7 +26,6 @@ export default async function Post({ params }: { params: { slug: string } }) {
                     <ClientGiscus />
                 </div>
             </article>
-            <Footer />
         </main>
     );
 }

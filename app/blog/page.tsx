@@ -1,14 +1,11 @@
 import Link from "next/link";
 import { getSortedPostsData } from "../../lib/mdx";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 
 export default function Blog() {
     const allPostsData = getSortedPostsData();
 
     return (
         <main className="min-h-screen bg-slate-950 text-slate-200 selection:bg-blue-500/30">
-            <Header />
             <div className="container mx-auto px-6 pt-32 pb-20">
                 <h1 className="text-4xl md:text-5xl font-bold mb-12 text-center">
                     Blog
@@ -33,7 +30,6 @@ export default function Blog() {
                     ))}
                 </div>
             </div>
-            <Footer />
         </main>
     );
 }
