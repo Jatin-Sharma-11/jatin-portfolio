@@ -1,33 +1,22 @@
 import Link from "next/link";
-import { getSortedPostsData } from "../../lib/mdx";
+import { getSortedPostsData } from "@/lib/mdx";
+import BlogSearch from "./BlogSearch";
 
 export default function Blog() {
     const allPostsData = getSortedPostsData();
 
     return (
-        <main className="min-h-screen bg-slate-950 text-slate-200 selection:bg-blue-500/30">
-            <div className="container mx-auto px-6 pt-32 pb-20">
-                <h1 className="text-4xl md:text-5xl font-bold mb-12 text-center">
-                    Blog
-                </h1>
-                <div className="grid gap-8 max-w-3xl mx-auto">
-                    {allPostsData.map(({ id, date, title, description }) => (
-                        <Link
-                            href={`/blog/${id}`}
-                            key={id}
-                            className="block p-8 bg-slate-900/50 border border-slate-800 rounded-2xl hover:border-blue-500/50 transition-all hover:-translate-y-1 group"
-                        >
-                            <div className="flex items-center gap-4 text-sm text-slate-400 mb-4">
-                                <time>{date}</time>
-                            </div>
-                            <h2 className="text-2xl font-bold mb-4 group-hover:text-blue-400 transition-colors">
-                                {title}
-                            </h2>
-                            <p className="text-slate-400 leading-relaxed">
-                                {description}
-                            </p>
-                        </Link>
-                    ))}
+        <main className="min-h-screen bg-slate-950 text-slate-200 pt-24 pb-20 px-6">
+            <div className="max-w-4xl mx-auto">
+                <div className="text-center mb-16">
+                    <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">
+                        Blog
+                    </h1>
+                    <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-8">
+                        Thoughts, tutorials, and insights on software engineering, machine learning, and more.
+                    </p>
+
+                    <BlogSearch posts={allPostsData} />
                 </div>
             </div>
         </main>
