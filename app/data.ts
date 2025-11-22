@@ -37,12 +37,14 @@ export const education = [
         degree: "MS (Research) in Computer Science and Engineering",
         year: "2024 – 2026",
         grade: "CGPA: 9.92/10",
+        logo: "/iiti-logo.png",
     },
     {
         institution: "University Institute of Technology, HPU, Shimla",
         degree: "B.Tech. in Computer Science and Engineering",
         year: "2020 – 2024",
         grade: "CGPA: 9.04/10",
+        logo: "/hpu-logo.png",
     },
 ];
 
@@ -58,6 +60,7 @@ export const experience = [
             "Implemented end-to-end automated ML workflows utilizing MLOps principles with MLflow.",
             "Built real-time model inference APIs and dashboards using FastAPI.",
         ],
+        logo: "/encardio-logo.png",
     },
     {
         company: "Google Cloud Facilitator Program",
@@ -69,51 +72,52 @@ export const experience = [
             "Built scalable, secure cloud solutions involving machine learning workflows and data engineering.",
             "Successfully finished the '30 Days of Google Cloud' challenge.",
         ],
+        logo: "/google-cloud-logo.png",
     },
 ];
 
 export const projects = [
     {
-        title: "Traffic Flow Prediction",
-        tech: ["Python", "PyTorch", "TCN", "GAT", "Attention", "RAG"],
-        period: "Jan 2025 – Present",
-        description: "Built a sequence-to-sequence spatio-temporal forecasting model combining temporal convolutional networks and attention mechanisms. Incorporated RAG and graph-based modules.",
-        link: "#", // Confidential
+        title: "Machine Learning Short Projects",
+        tech: ["Python", "Scikit-learn", "Pandas", "Matplotlib"],
+        period: "Ongoing",
+        description: "A comprehensive collection of various machine learning projects, experiments, and implementations ranging from classical algorithms to deep learning applications.",
+        link: "https://github.com/Jatin-Sharma-11/Machine-Learning-Short-Projects",
     },
     {
-        title: "IITI Document QA Pipeline",
-        tech: ["Python", "Langchain", "RAG", "Streamlit", "Selenium"],
-        period: "Apr 2025 – Aug 2025",
-        description: "Developed an end-to-end document QA pipeline with real-time retrieval-augmented chatbot. Integrated OCR, clustering, and graph-based modules.",
-        link: "https://github.com/jatin-sharma/iiti-doc-qa", // Placeholder
-    },
-    {
-        title: "Real-Time Object Detection System",
-        tech: ["Python", "YOLOv5", "OpenCV", "Tkinter"],
-        period: "Jan 2025 – Feb 2025",
-        description: "Built a real-time object detection and removal system using YOLOv5 with inpainting-based object removal and dynamic control features.",
-        link: "https://github.com/jatin-sharma/object-detection", // Placeholder
-    },
-    {
-        title: "Sentiment Analysis using Transformers",
-        tech: ["Python", "BERT", "RoBERTa", "TensorFlow"],
-        period: "Sep 2024 – Dec 2024",
-        description: "Built a multimodal sentiment classification system integrating textual and visual signals. Fine-tuned BERT and RoBERTa for ABSA and market sentiment.",
-        link: "https://github.com/jatin-sharma/sentiment-analysis", // Placeholder
-    },
-    {
-        title: "Optimal File Compressor",
-        tech: ["C++", "Python", "LZW", "Huffman Coding"],
-        period: "Dec 2023 – Apr 2024",
-        description: "Engineered a hybrid file compression system combining LZW and Huffman Coding. Implemented core logic in C++ and UI in Python.",
-        link: "https://github.com/jatin-sharma/file-compressor", // Placeholder
+        title: "LMCache",
+        tech: ["Python", "LLMs", "Caching", "Optimization"],
+        period: "2024",
+        description: "An efficient caching system designed for Large Language Models to improve inference speed and reduce computational costs.",
+        link: "https://github.com/Jatin-Sharma-11/LMCache",
     },
     {
         title: "Chatify",
         tech: ["React.js", "Firebase", "Chakra UI"],
         period: "Oct 2023 – Feb 2024",
         description: "Built a full-stack real-time chat application with user authentication and message persistence using Firebase.",
-        link: "https://github.com/jatin-sharma/chatify", // Placeholder
+        link: "https://github.com/Jatin-Sharma-11/Chatify",
+    },
+    {
+        title: "Sentiment Analysis",
+        tech: ["Python", "BERT", "RoBERTa", "TensorFlow"],
+        period: "Sep 2024 – Dec 2024",
+        description: "Multimodal sentiment classification system integrating textual and visual signals. Fine-tuned BERT and RoBERTa for ABSA and market sentiment.",
+        link: "https://github.com/Jatin-Sharma-11/SentimentAnalysis",
+    },
+    {
+        title: "Object Detection YOLO",
+        tech: ["Python", "YOLOv5", "OpenCV", "Computer Vision"],
+        period: "Jan 2025 – Feb 2025",
+        description: "Real-time object detection and removal system using YOLOv5 with inpainting-based object removal and dynamic control features.",
+        link: "https://github.com/Jatin-Sharma-11/Object-Dectection-yolo",
+    },
+    {
+        title: "File Compressor V2",
+        tech: ["C++", "Python", "LZW", "Huffman Coding"],
+        period: "Dec 2023 – Apr 2024",
+        description: "Hybrid file compression system combining LZW and Huffman Coding. Implemented core logic in C++ for high performance.",
+        link: "https://github.com/Jatin-Sharma-11/file_compressor_v2",
     },
 ];
 

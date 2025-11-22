@@ -41,7 +41,7 @@ export default function Hero() {
                         className="flex flex-col sm:flex-row items-center justify-center gap-4"
                     >
                         <a
-                            href="#projects"
+                            href="/projects"
                             className="px-8 py-3 bg-blue-600 hover:bg-blue-500 text-white rounded-full font-medium transition-colors flex items-center gap-2"
                         >
                             View Work <ArrowRight className="w-4 h-4" />
