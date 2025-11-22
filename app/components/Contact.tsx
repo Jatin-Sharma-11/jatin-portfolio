@@ -17,7 +17,7 @@ export default function Contact() {
         const data = new FormData(form);
 
         try {
-            const response = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
+            const response = await fetch("https://formspree.io/f/xyzvnvov", {
                 method: "POST",
                 body: data,
                 headers: {
@@ -31,7 +31,7 @@ export default function Contact() {
             } else {
                 setStatus("error");
             }
-        } catch (error) {
+        } catch {
             setStatus("error");
         }
     }
@@ -47,7 +47,7 @@ export default function Contact() {
                 >
                     <h2 className="text-3xl md:text-4xl font-bold mb-6">Get In Touch</h2>
                     <p className="text-xl text-slate-400 max-w-2xl mx-auto">
-                        Have a project in mind or just want to say hi? I'd love to hear from you.
+                        Have a project in mind or just want to say hi? I&apos;d love to hear from you.
                     </p>
                 </motion.div>
 
