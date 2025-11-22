@@ -50,29 +50,28 @@ export const education = [
 
 export const experience = [
     {
-        company: "Encardio Rite",
-        role: "Data Scientist Engineer Intern",
-        period: "Sep 2025 – Current",
-        type: "Hybrid",
-        description: [
-            "Engaged in exploratory data analysis (EDA), feature engineering, and statistical assessment for large-scale time series datasets.",
-            "Developed, validated, and deployed predictive models for failure prediction and anomaly detection using classical and deep learning approaches.",
-            "Implemented end-to-end automated ML workflows utilizing MLOps principles with MLflow.",
-            "Built real-time model inference APIs and dashboards using FastAPI.",
-        ],
-        logo: "/encardio-logo.png",
+        company: "IIT Indore",
+        role: "Research Assistant",
+        period: "2024 - 2026",
+        location: "Indore, India",
+        description: "Conducting research in Machine Learning and AI, focusing on advanced algorithms and their applications in real-world problems.",
+        logo: "/iit-indore-logo.png"
     },
     {
-        company: "Google Cloud Facilitator Program",
-        role: "Trainee",
-        period: "Apr 2021 – Sep 2021",
-        type: "Remote",
-        description: [
-            "Completed intensive curriculum covering core GCP services (Compute Engine, Cloud Storage, BigQuery, AI/ML).",
-            "Built scalable, secure cloud solutions involving machine learning workflows and data engineering.",
-            "Successfully finished the '30 Days of Google Cloud' challenge.",
-        ],
-        logo: "/google-cloud-logo.png",
+        company: "Encardio Rite",
+        role: "Software Development Intern",
+        period: "May 2024 - Jul 2024",
+        location: "New Delhi, India",
+        description: "Developed and optimized software solutions for geotechnical monitoring systems, improving data processing efficiency by 30%.",
+        logo: "/encardio-logo.png"
+    },
+    {
+        company: "Google Cloud",
+        role: "Cloud Computing Facilitator",
+        period: "Sep 2023 - Dec 2023",
+        location: "Remote",
+        description: "Facilitated cloud computing workshops and training sessions, helping students gain hands-on experience with Google Cloud Platform.",
+        logo: "/google-cloud-logo.png"
     },
 ];
 

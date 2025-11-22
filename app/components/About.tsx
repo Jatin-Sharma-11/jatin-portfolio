@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Section from "./Section";
-import { education, skills, personalInfo, techIcons } from "../data";
+import { education, skills, personalInfo, techIcons, experience } from "../data";
 
 export default function About() {
     // Flatten all skills into a single array for the marquee
@@ -12,7 +12,7 @@ export default function About() {
 
     return (
         <Section id="about">
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-5xl mx-auto">
                 {/* About Me Section */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -33,19 +33,19 @@ export default function About() {
                         initial={{ opacity: 0, x: -20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
-                        className="text-2xl font-bold mb-10 text-center md:text-left"
+                        className="text-2xl font-bold mb-10 text-center"
                     >
                         Education
                     </motion.h3>
 
-                    <div className="space-y-12">
+                    <div className="space-y-8">
                         {education.map((edu, index) => (
                             <motion.div
                                 key={index}
                                 initial={{ opacity: 0, y: 30 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
-                                transition={{ duration: 0.5, delay: index * 0.2 }}
+                                transition={{ duration: 0.5, delay: index * 0.15 }}
                                 className="flex flex-col md:flex-row gap-6 items-center md:items-start bg-slate-900/30 p-6 rounded-2xl border border-slate-800 hover:border-blue-500/30 transition-colors"
                             >
                                 <div className="w-20 h-20 rounded-xl bg-white p-2 border border-slate-700 flex-shrink-0 overflow-hidden shadow-lg shadow-blue-900/10">
@@ -56,7 +56,7 @@ export default function About() {
                                         className="w-full h-full object-contain"
                                     />
                                 </div>
-                                <div className="text-center md:text-left">
+                                <div className="text-center md:text-left flex-grow">
                                     <h4 className="text-xl font-bold text-slate-200">
                                         {edu.institution}
                                     </h4>
@@ -67,6 +67,57 @@ export default function About() {
                                         </span>
                                         <span className="px-3 py-1 bg-slate-800 rounded-full border border-slate-700">
                                             {edu.grade}
+                                        </span>
+                                    </div>
+                                </div>
+                            </motion.div>
+                        ))}
+                    </div>
+                </div>
+
+                {/* Experience Section */}
+                <div className="mb-20">
+                    <motion.h3
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        className="text-2xl font-bold mb-10 text-center"
+                    >
+                        Experience
+                    </motion.h3>
+
+                    <div className="space-y-8">
+                        {experience.map((exp, index) => (
+                            <motion.div
+                                key={index}
+                                initial={{ opacity: 0, y: 30 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.5, delay: index * 0.15 }}
+                                className="flex flex-col md:flex-row gap-6 items-center md:items-start bg-slate-900/30 p-6 rounded-2xl border border-slate-800 hover:border-blue-500/30 transition-colors"
+                            >
+                                <div className="w-20 h-20 rounded-xl bg-white p-2 border border-slate-700 flex-shrink-0 overflow-hidden shadow-lg shadow-blue-900/10">
+                                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                                    <img
+                                        src={exp.logo}
+                                        alt={exp.company}
+                                        className="w-full h-full object-contain"
+                                    />
+                                </div>
+                                <div className="text-center md:text-left flex-grow">
+                                    <h4 className="text-xl font-bold text-slate-200">
+                                        {exp.role}
+                                    </h4>
+                                    <p className="text-blue-400 font-medium mt-1">{exp.company}</p>
+                                    <p className="text-slate-400 text-sm mt-2 leading-relaxed">
+                                        {exp.description}
+                                    </p>
+                                    <div className="flex flex-wrap gap-3 justify-center md:justify-start mt-3 text-sm text-slate-500">
+                                        <span className="px-3 py-1 bg-slate-800 rounded-full border border-slate-700">
+                                            {exp.period}
+                                        </span>
+                                        <span className="px-3 py-1 bg-slate-800 rounded-full border border-slate-700">
+                                            {exp.location}
                                         </span>
                                     </div>
                                 </div>
