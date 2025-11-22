@@ -24,7 +24,7 @@ export default function Hero() {
                             Available for Opportunities
                         </span>
                         <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
-                            Hi, I'm <span className="text-blue-400">{personalInfo.name}</span>
+                            Hi, I&apos;m <span className="text-blue-400">{personalInfo.name}</span>
                         </h1>
                         <p className="text-xl md:text-2xl text-slate-400 mb-8 leading-relaxed">
                             {personalInfo.title}
