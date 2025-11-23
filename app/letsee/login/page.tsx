@@ -31,7 +31,7 @@ export default function LoginPage() {
             } else {
                 setError(data.message || 'Login failed');
             }
-        } catch (err) {
+        } catch {
             setError('Something went wrong');
         } finally {
             setLoading(false);

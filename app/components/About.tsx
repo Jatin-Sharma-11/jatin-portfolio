@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Section from "./Section";
-import { education, skills, personalInfo, techIcons, experience, projects } from "../data";
+import { education, skills, personalInfo, techIcons, experience } from "../data";
 
 export default function About() {
     // Flatten all skills into a single array for the marquee
@@ -88,7 +88,7 @@ export default function About() {
                         >
                             <div className="relative">
                                 {/* Decorative quote mark */}
-                                <div className="absolute -left-4 -top-2 text-6xl text-blue-500/20 font-serif">"</div>
+                                <div className="absolute -left-4 -top-2 text-6xl text-blue-500/20 font-serif">&ldquo;</div>
 
                                 <p className="text-slate-300 text-lg leading-relaxed mb-6 relative z-10">
                                     {personalInfo.about}
