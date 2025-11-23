@@ -1,0 +1,270 @@
+[
+    {
+        "id": "1",
+        "title": "Machine Learning Short Projects",
+        "tech": [
+            "Python",
+            "Scikit-learn",
+            "Pandas",
+            "Matplotlib"
+        ],
+        "period": "Ongoing",
+        "description": "A comprehensive collection of various machine learning projects, experiments, and implementations ranging from classical algorithms to deep learning applications.",
+        "link": "https://github.com/Jatin-Sharma-11/Machine-Learning-Short-Projects",
+        "category": "Machine Learning",
+        "visible": false
+    },
+    {
+        "id": "2",
+        "title": "LMCache",
+        "tech": [
+            "Python",
+            "LLMs",
+            "Caching",
+            "Optimization"
+        ],
+        "period": "2024",
+        "description": "An efficient caching system designed for Large Language Models to improve inference speed and reduce computational costs.",
+        "link": "https://github.com/Jatin-Sharma-11/LMCache",
+        "category": "AI/ML"
+    },
+    {
+        "id": "3",
+        "title": "Chatify",
+        "tech": [
+            "React.js",
+            "Firebase",
+            "Chakra UI"
+        ],
+        "period": "Oct 2023 – Feb 2024",
+        "description": "Built a full-stack real-time chat application with user authentication and message persistence using Firebase.",
+        "link": "https://github.com/Jatin-Sharma-11/Chatify",
+        "category": "Web Dev"
+    },
+    {
+        "id": "4",
+        "title": "Sentiment Analysis",
+        "tech": [
+            "Python",
+            "BERT",
+            "RoBERTa",
+            "TensorFlow"
+        ],
+        "period": "Sep 2024 – Dec 2024",
+        "description": "Multimodal sentiment classification system integrating textual and visual signals. Fine-tuned BERT and RoBERTa for ABSA and market sentiment.",
+        "link": "https://github.com/Jatin-Sharma-11/SentimentAnalysis",
+        "category": "AI/ML"
+    },
+    {
+        "id": "5",
+        "title": "Object Detection YOLO",
+        "tech": [
+            "Python",
+            "YOLOv5",
+            "OpenCV",
+            "Computer Vision"
+        ],
+        "period": "Jan 2025 – Feb 2025",
+        "description": "Real-time object detection and removal system using YOLOv5 with inpainting-based object removal and dynamic control features.",
+        "link": "https://github.com/Jatin-Sharma-11/Object-Dectection-yolo",
+        "category": "Computer Vision"
+    },
+    {
+        "id": "6",
+        "title": "File Compressor V2",
+        "tech": [
+            "C++",
+            "Python",
+            "LZW",
+            "Huffman Coding"
+        ],
+        "period": "Dec 2023 – Apr 2024",
+        "description": "Hybrid file compression system combining LZW and Huffman Coding. Implemented core logic in C++ for high performance.",
+        "link": "https://github.com/Jatin-Sharma-11/file_compressor_v2",
+        "category": "Systems"
+    },
+    {
+        "id": "7",
+        "title": "Movie Recommendation System",
+        "tech": [
+            "Python",
+            "Pandas",
+            "Scikit-learn"
+        ],
+        "period": "2023",
+        "description": "Content-based movie recommendation system using cosine similarity and collaborative filtering techniques.",
+        "link": "https://github.com/Jatin-Sharma-11/Movie-Recommendation-System",
+        "category": "Machine Learning"
+    },
+    {
+        "id": "8",
+        "title": "Face Recognition",
+        "tech": [
+            "Python",
+            "OpenCV",
+            "Deep Learning"
+        ],
+        "period": "2023",
+        "description": "Facial recognition system capable of identifying individuals in real-time video streams.",
+        "link": "https://github.com/Jatin-Sharma-11/Face_Recognition",
+        "category": "Computer Vision"
+    },
+    {
+        "id": "9",
+        "title": "Intro to GNNs",
+        "tech": [
+            "Python",
+            "PyTorch Geometric",
+            "GNN"
+        ],
+        "period": "2024",
+        "description": "Coursework and implementations of Graph Neural Networks, exploring various architectures and applications.",
+        "link": "https://github.com/Jatin-Sharma-11/intro-to-gnns-course",
+        "category": "AI/ML"
+    },
+    {
+        "id": "10",
+        "title": "Mem0",
+        "tech": [
+            "Python",
+            "Memory Management",
+            "Systems"
+        ],
+        "period": "2024",
+        "description": "Experimental memory management system implementation.",
+        "link": "https://github.com/Jatin-Sharma-11/mem0",
+        "category": "Systems"
+    },
+    {
+        "id": "11",
+        "title": "Blogger11",
+        "tech": [
+            "Next.js",
+            "React",
+            "Tailwind CSS"
+        ],
+        "period": "2024",
+        "description": "A modern blogging platform built with Next.js, featuring markdown support and a clean UI.",
+        "link": "https://github.com/Jatin-Sharma-11/blogger11",
+        "category": "Web Dev"
+    },
+    {
+        "id": "12",
+        "title": "MCP Servers",
+        "tech": [
+            "TypeScript",
+            "Node.js",
+            "Protocol"
+        ],
+        "period": "2024",
+        "description": "Implementation of Model Context Protocol servers for enhancing AI agent capabilities.",
+        "link": "https://github.com/Jatin-Sharma-11/mcpservers",
+        "category": "AI/ML"
+    },
+    {
+        "id": "13",
+        "title": "ML Blogs",
+        "tech": [
+            "Markdown",
+            "Jupyter",
+            "Technical Writing"
+        ],
+        "period": "Ongoing",
+        "description": "A collection of technical blogs and tutorials explaining complex Machine Learning concepts.",
+        "link": "https://github.com/Jatin-Sharma-11/mlblogs",
+        "category": "Content"
+    },
+    {
+        "id": "14",
+        "title": "Vichaar",
+        "tech": [
+            "React",
+            "Node.js",
+            "Express"
+        ],
+        "period": "2023",
+        "description": "A social platform for sharing thoughts and ideas, fostering community interaction.",
+        "link": "https://github.com/Jatin-Sharma-11/vichaar",
+        "category": "Web Dev"
+    },
+    {
+        "id": "15",
+        "title": "AI Chatbot",
+        "tech": [
+            "Python",
+            "NLP",
+            "Transformers"
+        ],
+        "period": "2023",
+        "description": "Intelligent chatbot capable of understanding context and engaging in natural conversations.",
+        "link": "https://github.com/Jatin-Sharma-11/aichatbot",
+        "category": "AI/ML"
+    },
+    {
+        "id": "16",
+        "title": "Superlink",
+        "tech": [
+            "TypeScript",
+            "React",
+            "Utilities"
+        ],
+        "period": "2024",
+        "description": "A utility tool for managing and organizing important links and resources efficiently.",
+        "link": "https://github.com/Jatin-Sharma-11/superlink",
+        "category": "Web Dev"
+    },
+    {
+        "id": "17",
+        "title": "DeepML",
+        "tech": [
+            "Python",
+            "Deep Learning",
+            "Neural Networks"
+        ],
+        "period": "2024",
+        "description": "Deep dive implementations of advanced deep learning architectures and papers.",
+        "link": "https://github.com/Jatin-Sharma-11/DeepML",
+        "category": "AI/ML"
+    },
+    {
+        "id": "18",
+        "title": "LeetCode Solutions",
+        "tech": [
+            "C++",
+            "Python",
+            "Algorithms",
+            "Data Structures"
+        ],
+        "period": "Ongoing",
+        "description": "Collection of optimized solutions for LeetCode problems, focusing on algorithmic efficiency.",
+        "link": "https://github.com/Jatin-Sharma-11/LeetCode",
+        "category": "DSA"
+    },
+    {
+        "id": "19",
+        "title": "LLM Text Detection",
+        "tech": [
+            "Python",
+            "NLP",
+            "Transformers",
+            "Research"
+        ],
+        "period": "2024",
+        "description": "Research project on metric models for detecting text generated by Large Language Models.",
+        "link": "https://github.com/Jatin-Sharma-11/Metric-Models-for-Detection-of-LLM-Texts",
+        "category": "Research"
+    },
+    {
+        "id": "20",
+        "title": "STPGNN",
+        "tech": [
+            "Python",
+            "GNN",
+            "Spatio-Temporal"
+        ],
+        "period": "2024",
+        "description": "Spatio-Temporal Graph Neural Network implementation for time-series forecasting on graph data.",
+        "link": "https://github.com/Jatin-Sharma-11/STPGNN",
+        "category": "Research"
+    }
+]

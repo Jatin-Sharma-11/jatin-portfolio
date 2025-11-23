@@ -1,0 +1,58 @@
+[
+    {
+        "id": "1",
+        "src": "/gallery/photo-1.png",
+        "title": "Mountain Sunset",
+        "description": "A breathtaking view of mountains during golden hour with dramatic clouds painting the sky.",
+        "location": "Rocky Mountains, Colorado",
+        "camera": "Canon EOS R5",
+        "date": "October 2024",
+        "visible": false
+    },
+    {
+        "id": "2",
+        "src": "/gallery/photo-2.png",
+        "title": "City Lights",
+        "description": "The vibrant energy of the city captured through long exposure light trails.",
+        "location": "Downtown Manhattan, NYC",
+        "camera": "Sony A7III",
+        "date": "September 2024",
+        "visible": false
+    },
+    {
+        "id": "3",
+        "src": "/gallery/photo-3.png",
+        "title": "Waterfall Serenity",
+        "description": "Long exposure capture of a peaceful waterfall in the heart of the forest.",
+        "location": "Pacific Northwest",
+        "camera": "Nikon Z7",
+        "date": "August 2024"
+    },
+    {
+        "id": "4",
+        "src": "/gallery/photo-4.png",
+        "title": "Modern Architecture",
+        "description": "Geometric patterns and clean lines of contemporary architectural design.",
+        "location": "Los Angeles, CA",
+        "camera": "Fujifilm X-T4",
+        "date": "July 2024"
+    },
+    {
+        "id": "5",
+        "src": "/gallery/photo-5.png",
+        "title": "Abstract Lights",
+        "description": "Playing with bokeh and light to create an artistic abstract composition.",
+        "location": "Studio",
+        "camera": "Canon EOS R5",
+        "date": "November 2024"
+    },
+    {
+        "id": "6",
+        "src": "/gallery/photo-6.png",
+        "title": "Street Moments",
+        "description": "Candid street photography capturing authentic urban life.",
+        "location": "San Francisco, CA",
+        "camera": "Leica Q2",
+        "date": "June 2024"
+    }
+]

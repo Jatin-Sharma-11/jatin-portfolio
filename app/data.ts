@@ -46,21 +46,35 @@ export const education = [
         grade: "CGPA: 9.04/10",
         logo: "/hpu-logo.png",
     },
+    {
+        institution: "Kendriya Vidyalaya, Mandi",
+        degree: "Class 12th (PCM)",
+        year: "2019 – 2020",
+        grade: "94.8%",
+        logo: "/kv-logo.png",
+    },
+    {
+        institution: "Kendriya Vidyalaya, Mandi",
+        degree: "Class 10th",
+        year: "2017 – 2018",
+        grade: "88.8%",
+        logo: "/kv-logo.png",
+    },
 ];
 
 export const experience = [
     {
         company: "IIT Indore",
         role: "Research Assistant",
-        period: "2024 - 2026",
+        period: "June 2024 - May 2026",
         location: "Indore, India",
         description: "Conducting research in Machine Learning and AI, focusing on advanced algorithms and their applications in real-world problems.",
         logo: "/iit-indore-logo.png"
     },
     {
         company: "Encardio Rite",
-        role: "Software Development Intern",
-        period: "May 2024 - Jul 2024",
+        role: "Data Science Engineer Intern",
+        period: "September 2025 - November 2024",
         location: "New Delhi, India",
         description: "Developed and optimized software solutions for geotechnical monitoring systems, improving data processing efficiency by 30%.",
         logo: "/encardio-logo.png"
@@ -68,7 +82,7 @@ export const experience = [
     {
         company: "Google Cloud",
         role: "Cloud Computing Facilitator",
-        period: "Sep 2023 - Dec 2023",
+        period: "April 2023 - October 2023",
         location: "Remote",
         description: "Facilitated cloud computing workshops and training sessions, helping students gain hands-on experience with Google Cloud Platform.",
         logo: "/google-cloud-logo.png"
@@ -79,13 +93,14 @@ export const techIcons: Record<string, string> = {
     "Python": "https://skillicons.dev/icons?i=python",
     "Scikit-learn": "https://skillicons.dev/icons?i=sklearn",
     "Pandas": "https://skillicons.dev/icons?i=pandas",
-    "Matplotlib": "https://skillicons.dev/icons?i=matlab", // Fallback or similar
-    "LLMs": "https://skillicons.dev/icons?i=pytorch", // Generic AI
+    "Matplotlib": "https://skillicons.dev/icons?i=matlab",
+    "LLMs": "https://skillicons.dev/icons?i=pytorch",
     "Caching": "https://skillicons.dev/icons?i=redis",
     "Optimization": "https://skillicons.dev/icons?i=c",
     "React.js": "https://skillicons.dev/icons?i=react",
+    "React": "https://skillicons.dev/icons?i=react",
     "Firebase": "https://skillicons.dev/icons?i=firebase",
-    "Chakra UI": "https://skillicons.dev/icons?i=css", // Fallback
+    "Chakra UI": "https://skillicons.dev/icons?i=css",
     "BERT": "https://skillicons.dev/icons?i=pytorch",
     "RoBERTa": "https://skillicons.dev/icons?i=pytorch",
     "TensorFlow": "https://skillicons.dev/icons?i=tensorflow",
@@ -93,6 +108,18 @@ export const techIcons: Record<string, string> = {
     "OpenCV": "https://skillicons.dev/icons?i=opencv",
     "Computer Vision": "https://skillicons.dev/icons?i=opencv",
     "C++": "https://skillicons.dev/icons?i=cpp",
+    "C/C++": "https://skillicons.dev/icons?i=cpp",
+    "Java": "https://skillicons.dev/icons?i=java",
+    "SQL": "https://skillicons.dev/icons?i=mysql",
+    "PyTorch": "https://skillicons.dev/icons?i=pytorch",
+    "RAG": "https://skillicons.dev/icons?i=python",
+    "LangChain": "https://skillicons.dev/icons?i=python",
+    "Generative AI": "https://skillicons.dev/icons?i=pytorch",
+    "Graph ML": "https://skillicons.dev/icons?i=pytorch",
+    "Time-Series Analysis": "https://skillicons.dev/icons?i=python",
+    "Vector Databases": "https://skillicons.dev/icons?i=redis",
+    "Data Visualization": "https://skillicons.dev/icons?i=grafana,matlab",
+    "MLflow": "https://skillicons.dev/icons?i=python",
     "LZW": "https://skillicons.dev/icons?i=c",
     "Huffman Coding": "https://skillicons.dev/icons?i=c",
     "Next.js": "https://skillicons.dev/icons?i=nextjs",
@@ -114,6 +141,11 @@ export const techIcons: Record<string, string> = {
     "Express": "https://skillicons.dev/icons?i=express",
     "FastAPI": "https://skillicons.dev/icons?i=fastapi",
     "Flask": "https://skillicons.dev/icons?i=flask",
+    "Algorithms": "https://skillicons.dev/icons?i=cpp",
+    "Data Structures": "https://skillicons.dev/icons?i=cpp",
+    "DBMS": "https://skillicons.dev/icons?i=postgres",
+    "Operating Systems": "https://skillicons.dev/icons?i=linux",
+    "Networks": "https://skillicons.dev/icons?i=nginx",
 };
 
 export const projects = [

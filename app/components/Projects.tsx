@@ -1,14 +1,32 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { Github, Search, X } from "lucide-react";
+import { Github, Search, X, Loader2 } from "lucide-react";
 import Section from "./Section";
-import { projects, techIcons } from "../data";
-import { useState } from "react";
+import { techIcons } from "../data";
+import { useState, useEffect } from "react";
+import { Project } from "@/lib/data";
 
 export default function Projects() {
     const [searchQuery, setSearchQuery] = useState("");
-    const [selectedProject, setSelectedProject] = useState<typeof projects[0] | null>(null);
+    const [projects, setProjects] = useState<Project[]>([]);
+    const [loading, setLoading] = useState(true);
+    const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+
+    useEffect(() => {
+        const fetchProjects = async () => {
+            try {
+                const res = await fetch('/api/projects');
+                const data = await res.json();
+                setProjects(data);
+            } catch (error) {
+                console.error("Failed to fetch projects", error);
+            } finally {
+                setLoading(false);
+            }
+        };
+        fetchProjects();
+    }, []);
 
     const filteredProjects = projects.filter(project =>
         project.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -44,52 +62,58 @@ export default function Projects() {
                     </div>
                 </div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {filteredProjects.map((project, index) => (
-                        <motion.div
-                            key={index}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.5, delay: index * 0.1 }}
-                            onClick={() => setSelectedProject(project)}
-                            className="group bg-slate-900/50 rounded-2xl border border-slate-800 overflow-hidden hover:border-blue-500/50 transition-all hover:shadow-lg hover:shadow-blue-500/10 cursor-pointer flex flex-col h-full"
-                        >
-                            <div className="p-6 flex flex-col flex-grow">
-                                <div className="flex justify-between items-start mb-4">
-                                    <span className="px-3 py-1 text-xs font-medium bg-blue-500/10 text-blue-400 rounded-full border border-blue-500/20">
-                                        {project.category || "Project"}
-                                    </span>
-                                    <Github className="w-5 h-5 text-slate-500 group-hover:text-white transition-colors" />
-                                </div>
-
-                                <h3 className="text-xl font-bold mb-3 text-slate-200 group-hover:text-blue-400 transition-colors">
-                                    {project.title}
-                                </h3>
-
-                                <p className="text-slate-400 text-sm leading-relaxed mb-6 line-clamp-3 flex-grow">
-                                    {project.description}
-                                </p>
-
-                                <div className="flex flex-wrap gap-2 mt-auto">
-                                    {project.tech.slice(0, 3).map((tech) => (
-                                        <span
-                                            key={tech}
-                                            className="px-2 py-1 bg-slate-950 text-slate-500 text-xs rounded border border-slate-800"
-                                        >
-                                            {tech}
+                {loading ? (
+                    <div className="flex justify-center py-20">
+                        <Loader2 className="w-12 h-12 animate-spin text-blue-500" />
+                    </div>
+                ) : (
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {filteredProjects.map((project, index) => (
+                            <motion.div
+                                key={index}
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.5, delay: index * 0.1 }}
+                                onClick={() => setSelectedProject(project)}
+                                className="group bg-slate-900/50 rounded-2xl border border-slate-800 overflow-hidden hover:border-blue-500/50 transition-all hover:shadow-lg hover:shadow-blue-500/10 cursor-pointer flex flex-col h-full"
+                            >
+                                <div className="p-6 flex flex-col flex-grow">
+                                    <div className="flex justify-between items-start mb-4">
+                                        <span className="px-3 py-1 text-xs font-medium bg-blue-500/10 text-blue-400 rounded-full border border-blue-500/20">
+                                            {project.category || "Project"}
                                         </span>
-                                    ))}
-                                    {project.tech.length > 3 && (
-                                        <span className="px-2 py-1 bg-slate-950 text-slate-500 text-xs rounded border border-slate-800">
-                                            +{project.tech.length - 3}
-                                        </span>
-                                    )}
+                                        <Github className="w-5 h-5 text-slate-500 group-hover:text-white transition-colors" />
+                                    </div>
+
+                                    <h3 className="text-xl font-bold mb-3 text-slate-200 group-hover:text-blue-400 transition-colors">
+                                        {project.title}
+                                    </h3>
+
+                                    <p className="text-slate-400 text-sm leading-relaxed mb-6 line-clamp-3 flex-grow">
+                                        {project.description}
+                                    </p>
+
+                                    <div className="flex flex-wrap gap-2 mt-auto">
+                                        {project.tech.slice(0, 3).map((tech) => (
+                                            <span
+                                                key={tech}
+                                                className="px-2 py-1 bg-slate-950 text-slate-500 text-xs rounded border border-slate-800"
+                                            >
+                                                {tech}
+                                            </span>
+                                        ))}
+                                        {project.tech.length > 3 && (
+                                            <span className="px-2 py-1 bg-slate-950 text-slate-500 text-xs rounded border border-slate-800">
+                                                +{project.tech.length - 3}
+                                            </span>
+                                        )}
+                                    </div>
                                 </div>
-                            </div>
-                        </motion.div>
-                    ))}
-                </div>
+                            </motion.div>
+                        ))}
+                    </div>
+                )}
 
                 {filteredProjects.length === 0 && (
                     <div className="text-center text-slate-500 mt-12">

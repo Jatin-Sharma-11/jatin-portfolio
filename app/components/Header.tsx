@@ -10,10 +10,14 @@ const navItems = [
     { name: "About", href: "/about" },
     { name: "Projects", href: "/projects" },
     { name: "Blog", href: "/blog" },
+    { name: "Photo Vlogs", href: "/photo-vlogs" },
     { name: "Contact", href: "/contact" },
 ];
 
+import { usePathname } from "next/navigation";
+
 export default function Header() {
+    const pathname = usePathname();
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -24,6 +28,9 @@ export default function Header() {
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
+
+    // Hide header on admin pages
+    if (pathname?.startsWith('/letsee')) return null;
 
     return (
         <header
