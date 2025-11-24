@@ -12,8 +12,10 @@
     A modern, responsive portfolio showcasing my projects in Software Development and Data Science.
   </p>
 </div>
-# 👨‍💻 Jatin's Portfolio
+
 ---
+
+# 👨‍💻 Jatin's Portfolio
 
 ### 🛠️ Tech Stack
 * **Framework:** Next.js / React
