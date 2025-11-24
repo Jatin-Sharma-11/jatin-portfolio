@@ -15,7 +15,6 @@
 
 ---
 
-# 👨‍💻 Jatin's Portfolio
 
 ### 🛠️ Tech Stack
 * **Framework:** Next.js / React
